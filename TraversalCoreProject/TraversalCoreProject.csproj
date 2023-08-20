@@ -1,0 +1,87 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="10.3.6" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="10.3.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.15" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj" />
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj" />
+    <ProjectReference Include="..\EntityLayer\EntityLayer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\Components\_PopularDestinations\Default.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Views\Shared\Components\_CommentList\Default.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\Components\_Testimonial\Default.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\Components\_SubAbout\Default.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\Components\_Feature\Default.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\Components\_Statistics\Default.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\Components\_PopularDestinations\Default.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\Components\_Statistics\Default.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\Components\_Feature\Default.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\Components\_SubAbout\Default.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\Components\_Testimonial\Default.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Traversal-Liberty\assets\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\Traversal-Liberty\assets\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\Traversal-Liberty\assets\js\all.js" />
+    <None Include="wwwroot\Traversal-Liberty\assets\js\app.js" />
+    <None Include="wwwroot\Traversal-Liberty\assets\js\bootstrap.min.js" />
+    <None Include="wwwroot\Traversal-Liberty\assets\js\jquery-3.3.1.min.js" />
+    <None Include="wwwroot\Traversal-Liberty\assets\js\jquery.countup.js" />
+    <None Include="wwwroot\Traversal-Liberty\assets\js\jquery.min.js" />
+    <None Include="wwwroot\Traversal-Liberty\assets\js\jquery.waypoints.min.js" />
+    <None Include="wwwroot\Traversal-Liberty\assets\js\jquery.zoomslider.min.js" />
+    <None Include="wwwroot\Traversal-Liberty\assets\js\lightbox-plus-jquery.min.js" />
+    <None Include="wwwroot\Traversal-Liberty\assets\js\main.js" />
+    <None Include="wwwroot\Traversal-Liberty\assets\js\modernizr-2.6.2.min.js" />
+    <None Include="wwwroot\Traversal-Liberty\assets\js\owl.carousel.js" />
+    <None Include="wwwroot\Traversal-Liberty\assets\js\popper.min.js" />
+    <None Include="wwwroot\Traversal-Liberty\assets\js\theme-change.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\Components\_CommentList\Default.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Pages\Components\" />
+  </ItemGroup>
+
+</Project>
